@@ -45,7 +45,7 @@ import sayantan from "./assets/images/3rd_yr/sayantan.jpg";
 import sham from "./assets/images/3rd_yr/sham.jpg";
 import shaswata from "./assets/images/3rd_yr/Shaswata.jpg";
 import soni from "./assets/images/3rd_yr/soni.jpg";
-import suraj from "./assets/images/3rd_yr/suraj.jpg";
+import suraj from "./assets/images/3rd_yr/suraj.JPG";
 import swastik from "./assets/images/3rd_yr/swastik.jpg";
 import thanu from "./assets/images/3rd_yr/thanu.jpg";
 import utkarsh from "./assets/images/3rd_yr/utkarsh.jpg";
