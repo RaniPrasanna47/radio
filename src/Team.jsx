@@ -30,7 +30,7 @@ import harshada from "../src/assets/images/4th_yr/harsh.jpg";
 
 // 3rd yr wale
 import aman from "./assets/images/3rd_yr/aman.jpg";
-import animesh from "./assets/images/3rd_yr/animesh.jpg";
+import animesh from "./assets/images/3rd_yr/animesh.JPG";
 import anth from "./assets/images/3rd_yr/anth.jpg";
 import anurag from "./assets/images/3rd_yr/anurag.jpg";
 import bashu from "./assets/images/3rd_yr/bashu.jpg";
