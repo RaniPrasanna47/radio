@@ -7,7 +7,7 @@ import { FaInstagram, FaLinkedin, FaPhone, FaEnvelope } from "react-icons/fa";
 import Tushar from "../src/assets/images/faculty/TusharKanti.jpeg";
 
 // 4th Year images
-import jayantmandal from "../src/assets/images/4th_yr/jayant.jpg";
+import jayantmandal from "../src/assets/images/4th_yr/Jayant.jpg";
 import kirthika from "../src/assets/images/4th_yr/kir.jpg";
 import asif from "../src/assets/images/4th_yr/asif.jpg";
 import ramya from "../src/assets/images/4th_yr/ramya.jpg";
