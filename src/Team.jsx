@@ -43,7 +43,7 @@ import mmk from "./assets/images/3rd_yr/mmk.jpg";
 import pulkit from "./assets/images/3rd_yr/pulkit.jpeg";
 import sayantan from "./assets/images/3rd_yr/sayantan.jpg";
 import sham from "./assets/images/3rd_yr/sham.jpg";
-import shaswata from "./assets/images/3rd_yr/shaswata.jpg";
+import shaswata from "./assets/images/3rd_yr/Shaswata.jpg";
 import soni from "./assets/images/3rd_yr/soni.jpg";
 import suraj from "./assets/images/3rd_yr/suraj.jpg";
 import swastik from "./assets/images/3rd_yr/swastik.jpg";
