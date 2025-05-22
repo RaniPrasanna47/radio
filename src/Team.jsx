@@ -37,7 +37,7 @@ import bashu from "./assets/images/3rd_yr/bashu.jpg";
 import bhav from "./assets/images/3rd_yr/bhav.jpg";
 import darshit from "./assets/images/3rd_yr/darshit.jpg";
 import debasmitaSaha from "./assets/images/3rd_yr/DebasmitaSaha.jpg";
-import gopeshwar from "./assets/images/3rd_yr/gopeshwar.jpg";
+import gopeshwar from "./assets/images/3rd_yr/Gopeshwar.jpg";
 import huza from "./assets/images/3rd_yr/huza.jpg";
 import mmk from "./assets/images/3rd_yr/mmk.jpg";
 import pulkit from "./assets/images/3rd_yr/pulkit.jpeg";
