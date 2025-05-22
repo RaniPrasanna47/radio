@@ -58,7 +58,7 @@ import shobhit from "./assets/images/2nd_year/Shobhit_.jpg";
 import raniPrasanna from "./assets/images/2nd_year/Rani.jpg";
 import philimon from "./assets/images/2nd_year/Philimon_.jpg";
 import suhani from "./assets/images/2nd_year/Suhani.jpg";
-import pravat from "./assets/images/2nd_year/Pravat.jpg";
+import pravat from "./assets/images/2nd_year/Pravat.JPG";
 import tolaram from "./assets/images/2nd_year/Tolaram_.jpg";
 import pallavi from "./assets/images/2nd_year/Pallavi Kumari_.jpg";
 import arijit from "./assets/images/2nd_year/ar1.jpg";
