@@ -17,7 +17,7 @@ import kholeDil from "./events/kholedl.jpeg";
 import nds from "./events/nds.jpeg";
 import ss from "./events/success_stories.jpeg";
 import prank from "./events/prank.jpeg";
-import ks from "./events/ks.jpeg";
+import ks from "./events/Ks.jpeg";
 import freshers_intro from "./events/freshers_intro.jpeg";
 import kj from "./events/kj.jpeg";
 import des from "./events/des.jpeg";
