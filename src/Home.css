@@ -51,14 +51,52 @@
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  
+  /* Gradient text effect */
   background: linear-gradient(45deg, var(--primary), var(--accent));
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: gradient-shift 4s ease infinite;
+  
+  /* Animation setup */
+  opacity: 0;
+  transform: translateX(-50px) translateY(0);
+  animation: 
+    fadeInFromLeft 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards,
+    gradient-shift 6s ease infinite,
+    float 4s ease-in-out infinite;
+  animation-delay: 0.3s;
 }
 
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 .subtitle {
   font-size: 1.25rem;
   color: var(--text-secondary);
@@ -67,6 +105,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 16px;
+  opacity: 0;
+  animation: fadeInFromLeft 0.8s ease-out forwards;
 }
 
 .subtitle::after {
@@ -82,9 +122,21 @@
     rgba(255,255,255,0.2),
     transparent
   );
-  animation: shine 3s infinite;
+  animation: shine 3s infinite 0.8s; /* Delayed to start after fade-in */
 }
 
+
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes gradient-shift {
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }
@@ -103,7 +155,7 @@
 }
 
 .share {
-  color: whitesmoke;
+  color: rgb(249, 208, 251);
   font-size: 1.5rem;
   margin: 0;
   font-weight: 600;
@@ -125,7 +177,7 @@
   width: 90px;
   height: 90px;
   border: none;
-  background: white;
+  background: #F6F5F2;
   border-radius: 15px;
   display: grid;
   place-items: center;

@@ -175,10 +175,7 @@ const location = useLocation();
           <p className="member-role">{post || domain}</p>
           
           <div className="contact-info">
-            <div className="contact-item">
-              <FaPhone className="contact-icon" />
-              <a href={`tel:${phone}`} className="contact-link">{phone}</a>
-            </div>
+           
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />
               <a href={`mailto:${email}`} className="contact-link">{email}</a>
