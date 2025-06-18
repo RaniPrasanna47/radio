@@ -166,7 +166,7 @@ const location = useLocation();
           </div>
           <h3 className="teammember-name">{name}</h3>
           <p className="member-role">{post || domain}</p>
-          <div className="flip-hint">Click to view or contact</div>
+          
         </div>
         
         {/* Back Side */}
