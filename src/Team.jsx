@@ -166,7 +166,7 @@ const location = useLocation();
           </div>
           <h3 className="teammember-name">{name}</h3>
           <p className="member-role">{post || domain}</p>
-          <div className="flip-hint">Click to view or contact</div>
+          
         </div>
         
         {/* Back Side */}
@@ -175,10 +175,7 @@ const location = useLocation();
           <p className="member-role">{post || domain}</p>
           
           <div className="contact-info">
-            <div className="contact-item">
-              <FaPhone className="contact-icon" />
-              <a href={`tel:${phone}`} className="contact-link">{phone}</a>
-            </div>
+           
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />
               <a href={`mailto:${email}`} className="contact-link">{email}</a>
