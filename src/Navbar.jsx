@@ -16,7 +16,7 @@ const Navbar = () => {
 
       // Only update section if on home page
       if (location.pathname === '/') {
-        const sections = ['home', 'events','team'];
+        const sections = ['home', 'events', 'team'];
         for (const section of sections) {
           const element = document.getElementById(section);
           if (element) {
@@ -40,7 +40,7 @@ const Navbar = () => {
 
     // If navigating to a different page
     if (location.pathname !== path) {
-      if (path === '/sponsors' || path === '/alumni' || path ==='/team'|| path === '/home') {
+      if (path === '/sponsors' || path === '/alumni' || path === '/team' || path === '/home') {
         // For sponsor/alumni/team pages, scroll to top after navigation
         navigate(path, { state: { scrollToTop: true } });
       } else {
@@ -115,6 +115,16 @@ const Navbar = () => {
                 className={activeSection === 'sponsors' ? 'active' : ''}
               >
                 Sponsors
+                <span className="nav-indicator"></span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://wavecraze.radionitroz.in/"
+                onClick={() => handleNavClick('wave craze')}
+                className={activeSection === 'wave craze' ? 'active' : ''}
+              >
+                Wave Craze
                 <span className="nav-indicator"></span>
               </Link>
             </li>

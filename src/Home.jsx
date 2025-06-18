@@ -1,12 +1,18 @@
 import { useState, useEffect } from 'react'
-import './Home.css'
-import { useLocation } from "react-router-dom";
+import "./home.css"
+
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const location = useLocation();
+  const [displayText, setDisplayText] = useState('')
+  const [isTyping, setIsTyping] = useState(true)
+  const [showCursor, setShowCursor] = useState(true)
+
+  const fullText = "Radio Nitroz"
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location.pathname]);
+  }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true)
@@ -15,17 +21,64 @@ const Home = () => {
     return () => clearTimeout(timer)
   }, [])
 
+  // Infinite typewriter effect
+  useEffect(() => {
+    if (!isVisible) return;
+
+    let index = 0;
+    let isDeleting = false;
+
+    const typeSpeed = 150;
+    const deleteSpeed = 100;
+    const pauseTime = 2000; // Pause after completing text
+
+    const type = () => {
+      if (!isDeleting) {
+        // Typing
+        if (index < fullText.length) {
+          setDisplayText(fullText.slice(0, index + 1));
+          index++;
+          setTimeout(type, typeSpeed);
+        } else {
+          // Finished typing, pause then start deleting
+          setIsTyping(false);
+          setTimeout(() => {
+            isDeleting = true;
+            setIsTyping(true);
+            type();
+          }, pauseTime);
+        }
+      } else {
+        // Deleting
+        if (index > 0) {
+          setDisplayText(fullText.slice(0, index - 1));
+          index--;
+          setTimeout(type, deleteSpeed);
+        } else {
+          // Finished deleting, start typing again
+          isDeleting = false;
+          setTimeout(type, 500);
+        }
+      }
+    };
+
+    const initialDelay = setTimeout(() => {
+      type();
+    }, 500);
+
+    return () => {
+      clearTimeout(initialDelay);
+    };
+  }, [isVisible]);
+
   return (
     <section id="home" className="home-section">
       <div className="container">
         <div className={`home-content ${isVisible ? 'visible' : ''}`}>
           <div className="home-text">
             <h1 className="main-title">
-              {"Radio Nitroz".split("").map((char, index) => (
-                <span className="blinking-letter" key={index} style={{ animationDelay: `${index * 0.1}s` }}>
-                  {char}
-                </span>
-              ))}
+              {displayText}
+              <span className="cursor">|</span>
             </h1>
 
             <p className="subtitle">
@@ -65,8 +118,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
-  )
+    </section>)
 }
-
 export default Home
