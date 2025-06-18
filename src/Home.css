@@ -51,13 +51,30 @@
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.2rem;
+  flex-wrap: wrap;
+}
+
+
+.blinking-letter {
   background: linear-gradient(45deg, var(--primary), var(--accent));
-  background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: gradient-shift 4s ease infinite;
+  animation: blink 1.2s infinite;
+  animation-fill-mode: both;
 }
+
+.blinking-letter:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
 
 .subtitle {
   font-size: 1.25rem;
@@ -94,6 +111,12 @@
 @keyframes shine {
   100% { left: 100% }
 }
+
+@keyframes typewriter {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 
 .home-right-content {
   display: flex;
@@ -251,4 +274,14 @@
   background: linear-gradient(45deg, var(--primary), var(--accent));
   border-radius: 50%;
   animation: particle-float 10s infinite;
+}
+
+.blink-letter {
+  display: inline-block;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.1; }
 }
