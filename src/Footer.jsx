@@ -27,7 +27,7 @@ const Footer = () => {
             <a href=" https://www.facebook.com/radionitroz.nitdgp/" aria-label="Facebook">
               <FaFacebook />
             </a>
-            <a href="https://www.linkedin.com/company/radio-nitroz-nitdgp/" aria-label="Linked In">
+            <a href="https://www.linkedin.com/company/radio-nitroz-nitdgp" aria-label="Linked In">
               <FaLinkedin />
             </a>
             <a href="https://www.instagram.com/radionitroz.nitdgp/" aria-label="Instagram">

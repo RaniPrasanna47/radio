@@ -47,6 +47,11 @@ import suraj from "./assets/images/3rd_yr/suraj.JPG";
 import swastik from "./assets/images/3rd_yr/swastik.jpg";
 import thanu from "./assets/images/3rd_yr/thanu.jpg";
 import vishu from "./assets/images/3rd_yr/vishu.jpg";
+import aditya from "./assets/images/3rd_yr/aditya.jpg"
+import debjyoti from "./assets/images/3rd_yr/debjyoti.jpg"
+import shruti from "./assets/images/3rd_yr/shruti.jpg"
+import soumyadeep from "./assets/images/3rd_yr/soumyadeep.jpg"
+import srijan from "./assets/images/3rd_yr/srijan.jpg"
 
 // 2nd Year images (example)
 import shivamKumar from "./assets/images/2nd_year/shivam.jpg";
@@ -66,11 +71,12 @@ import Chandra from "./assets/images/2nd_year/Chandramouli.jpg";
 import Shivansh from "./assets/images/2nd_year/Shivansh.jpg";
 import ishita from "./assets/images/2nd_year/ishita.jpg";
 
+
 const members = {
   faculty: [
-    { 
-      name: "Dr Tushar Kanti Bera", 
-      photo: Tushar, 
+    {
+      name: "Dr Tushar Kanti Bera",
+      photo: Tushar,
       post: "Faculty Advisor",
       instagram: "#",
       linkedin: "#",
@@ -118,7 +124,13 @@ const members = {
     { name: "Pulkit Sepat", photo: pulkit, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "pulkit@example.com" },
     { name: "Gopeshwar Kumar", photo: gopeshwar, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "gopeshwar@example.com" },
     { name: "Rishab Soni", photo: soni, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "rishab@example.com" },
-    { name: "Srirama Sai Bhavana", photo: bhav, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "bhavana@example.com" }
+    { name: "Srirama Sai Bhavana", photo: bhav, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "bhavana@example.com" },
+    { name: "Aditya Shaw", photo: aditya, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "bhavana@example.com" },
+    { name: "Debjyoti Shil", photo: debjyoti, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "bhavana@example.com" },
+    { name: "Shrutisadhan Mudly", photo: shruti, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "bhavana@example.com" },
+    { name: "Soumyadeep Dey", photo: soumyadeep, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "bhavana@example.com" },
+    { name: "Srijan Maddheshiya", photo: srijan, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "bhavana@example.com" }
+
   ],
   secondYear: [
     { name: "Shivam kumar", photo: shivamKumar, domain: "Web Development", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "shivam@example.com" },
@@ -127,27 +139,27 @@ const members = {
     { name: "Rani Prasanna", photo: raniPrasanna, domain: "Web Development", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "rani@example.com" },
     { name: "Philimon Hembram", photo: philimon, domain: "Graphic Design", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "philimon@example.com" },
     { name: "Akhil", photo: Akhil, domain: "Graphic Design", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "akhil@example.com" },
-    { name: "Shivansh Pratap Chaudhary", photo:Shivansh, domain: "Video Editing", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "shivansh@example.com" },
+    { name: "Shivansh Pratap Chaudhary", photo: Shivansh, domain: "Video Editing", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "shivansh@example.com" },
     { name: "Suhani Vishwakarma", photo: suhani, domain: "Web Development & Public Speaking", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "suhani@example.com" },
     { name: "Pravat Ranjan Naik", photo: pravat, domain: "Event Management", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "pravat@example.com" },
     { name: "Tolaram Kewatiya", photo: tolaram, domain: "Event Management & Graphic Design", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "tolaram@example.com" },
-    { name: "Pallavi Kumari", photo:pallavi, domain: "Graphic Design & Event Management", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "pallavi@example.com" },
+    { name: "Pallavi Kumari", photo: pallavi, domain: "Graphic Design & Event Management", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "pallavi@example.com" },
     { name: "Arijit Bag", photo: arijit, domain: "Content Writing", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "arijit@example.com" },
     { name: "Chandra mouli", photo: Chandra, domain: "Graphic Design", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "chandra@example.com" },
     { name: "Saipriya", photo: Saipriya, domain: "Content writing", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "saipriya@example.com" },
-    { name: "Jayant Rachhoya",photo: jayant, domain: "Video Editing", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "jayant@example.com" },
+    { name: "Jayant Rachhoya", photo: jayant, domain: "Video Editing", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "jayant@example.com" },
     { name: "Ishita Panda", photo: ishita, domain: "Event Management & Content Writing", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "ishita@example.com" }
   ]
 };
 
 const MemberCard = ({ name, photo, post, domain, instagram, linkedin, phone, email }) => {
   const [isFlipped, setIsFlipped] = React.useState(false);
-const location = useLocation();
- useEffect(() => {
+  const location = useLocation();
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
   return (
-    <div 
+    <div
       className={`card ${isFlipped ? 'flipped' : ''}`}
       onClick={() => setIsFlipped(!isFlipped)}
     >
@@ -160,22 +172,22 @@ const location = useLocation();
           </div>
           <h3 className="teammember-name">{name}</h3>
           <p className="member-role">{post || domain}</p>
-          
+
         </div>
-        
+
         {/* Back Side */}
         <div className="card-back">
           <h3 className="teammember-name">{name}</h3>
           <p className="member-role">{post || domain}</p>
-          
+
           <div className="contact-info">
-           
+
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />
               <a href={`mailto:${email}`} className="contact-link">{email}</a>
             </div>
           </div>
-          
+
           <div className="social-links">
             <a href={instagram} className="social-icon" onClick={e => e.stopPropagation()}>
               <FaInstagram className="icon" />
@@ -225,7 +237,7 @@ export default function TeamPage() {
         if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
       }
       draw() {
-        ctx.fillStyle = `rgba(108, 99, 255, ${this.size/3})`;
+        ctx.fillStyle = `rgba(108, 99, 255, ${this.size / 3})`;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
@@ -233,7 +245,7 @@ export default function TeamPage() {
     }
 
     for (let i = 0; i < 100; i++) particles.push(new Particle());
-    
+
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       particles.forEach(p => {
@@ -263,7 +275,7 @@ export default function TeamPage() {
     <div className="team-page">
       <div className="header-glow" />
       <div className="particles-container" />
-      
+
       <h1 className="title">
         <span className="title-text">Radio Nitroz</span>
         <span className="title-sub">Official Entertainment Club</span>
