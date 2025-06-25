@@ -38,17 +38,14 @@ import bhav from "./assets/images/3rd_yr/bhav.jpg";
 import darshit from "./assets/images/3rd_yr/darshit.jpg";
 import debasmitaSaha from "./assets/images/3rd_yr/DebasmitaSaha.jpg";
 import gopeshwar from "./assets/images/3rd_yr/Gopeshwar.jpg";
-import huza from "./assets/images/3rd_yr/huza.jpg";
 import mmk from "./assets/images/3rd_yr/mmk.jpg";
 import pulkit from "./assets/images/3rd_yr/pulkit.jpeg";
 import sayantan from "./assets/images/3rd_yr/sayantan.jpg";
-import sham from "./assets/images/3rd_yr/sham.jpg";
 import shaswata from "./assets/images/3rd_yr/Shaswata.jpg";
 import soni from "./assets/images/3rd_yr/soni.jpg";
 import suraj from "./assets/images/3rd_yr/suraj.JPG";
 import swastik from "./assets/images/3rd_yr/swastik.jpg";
 import thanu from "./assets/images/3rd_yr/thanu.jpg";
-import utkarsh from "./assets/images/3rd_yr/utkarsh.jpg";
 import vishu from "./assets/images/3rd_yr/vishu.jpg";
 
 // 2nd Year images (example)
@@ -116,13 +113,10 @@ const members = {
     { name: "Sashwata Ghosh", photo: shaswata, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "sashwata@example.com" },
     { name: "Basudev Pal", photo: bashu, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "basudev@example.com" },
     { name: "Vishu J", photo: vishu, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "vishu@example.com" },
-    { name: "Utkarsh A", photo: utkarsh, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "utkarsh@example.com" },
     { name: "Darshit R", photo: darshit, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "darshit@example.com" },
     { name: "Aman Shaw", photo: aman, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "aman@example.com" },
     { name: "Pulkit Sepat", photo: pulkit, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "pulkit@example.com" },
-    { name: "Shambhabi Gupta", photo: sham, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "shambhabi@example.com" },
     { name: "Gopeshwar Kumar", photo: gopeshwar, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "gopeshwar@example.com" },
-    { name: "Md Huzaifah Alam", photo: huza, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "huzaifah@example.com" },
     { name: "Rishab Soni", photo: soni, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "rishab@example.com" },
     { name: "Srirama Sai Bhavana", photo: bhav, domain: "Senior Coordinator", instagram: "#", linkedin: "#", phone: "+91XXXXXXXXXX", email: "bhavana@example.com" }
   ],

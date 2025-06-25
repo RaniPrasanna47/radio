@@ -12,7 +12,8 @@
   background: linear-gradient(135deg, rgba(84, 14, 28, 0.15), rgba(0, 0, 0, 0.25));
   min-height: 100vh;
 }
-.page-title, .section-title {
+
+.page-title {
   text-align: center;
   background: linear-gradient(45deg, var(--primary), var(--accent));
   -webkit-background-clip: text;
@@ -21,10 +22,10 @@
   color: transparent;
   margin-bottom: 1rem;
   position: relative;
+  font-size: 2.5rem;
 }
 
-.page-title::after,
-.section-title::after {
+.page-title::after {
   content: '';
   display: block;
   width: 60px;
@@ -33,10 +34,6 @@
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
-.section-title {
-  margin-top: 2rem;
-  font-size: 2rem;
-}
 
 /* Subtitle & Video */
 .subtitle-video-container {
@@ -44,27 +41,32 @@
   flex-wrap: wrap;
   gap: 9rem;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
+
 .home-text {
   flex: 1;
   min-width: 280px;
   color: #ddd;
+  max-width: 600px;
 }
+
 .video-card {
   flex: 1;
   min-width: 280px;
-  max-width: 480px;
+  max-width: 600px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 12px;
   overflow: hidden;
 }
+
 .responsive-video-wrapper {
   position: relative;
   width: 100%;
   padding-top: 56.25%;
 }
+
 .event-video {
   position: absolute;
   top: 0;
@@ -74,103 +76,196 @@
   object-fit: cover;
 }
 
-/* Carousel */
+/* Carousel Section */
 .carousel-section {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  margin: 0.5rem auto 1rem;
+  border-radius: 2px;
+}
+
+/* Radio Controls */
+.radio-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-custom {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.radio-label input:checked ~ .radio-custom {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.2);
+}
+
+/* 3D Wheel Carousel */
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 500px;
-  perspective: 1200px;
-  margin: 2rem 0;
+  height: 400px;
+  perspective: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
 }
-.carousel {
+
+.carousel-wheel {
+  position: relative;
   width: 100%;
   height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .carousel-item {
   position: absolute;
-  width: 260px;
-  height: 360px;
-  left: calc(50% - 130px);
-  top: calc(50% - 180px);
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
+  width: 280px;
+  height: 380px;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  will-change: transform, opacity;
 }
+
 .carousel-item img {
   width: 100%;
   height: 80%;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px var(--shadow);
-  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
 }
+
+.carousel-item.active img {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
 .carousel-caption {
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   color: var(--text);
   font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Reflection */
-.carousel-item .reflection {
-  position: absolute;
-  top: 82%;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  overflow: hidden;
-  transform: scaleY(-1) translateY(2px);
-  opacity: 0.4;
-}
-.carousel-item .reflection img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  filter: blur(2px) brightness(0.7);
-}
-
-/* Ground */
-.ground {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  pointer-events: none;
-}
-
-/* Responsiveness */
+/* Responsive adjustments */
 @media (max-width: 1024px) {
   .carousel-container {
-    height: 400px;
+    height: 350px;
   }
   .carousel-item {
-    width: 200px;
-    height: 300px;
-    left: calc(50% - 100px);
-    top: calc(50% - 150px);
+    width: 240px;
+    height: 320px;
   }
 }
+
 @media (max-width: 768px) {
   .subtitle-video-container {
     flex-direction: column;
     gap: 2rem;
   }
   .carousel-container {
-    height: 300px;
+    height: 280px;
   }
   .carousel-item {
-    width: 160px;
-    height: 240px;
-    left: calc(50% - 80px);
-    top: calc(50% - 120px);
+    width: 200px;
+    height: 280px;
+  }
+  .carousel-item[style*="translateX(60%)"] {
+    transform: translateX(40%) scale(0.9) !important;
+  }
+  .carousel-item[style*="translateX(-60%)"] {
+    transform: translateX(-40%) scale(0.9) !important;
+  }
+  .carousel-item[style*="translateX(100%)"] {
+    transform: translateX(60%) scale(0.7) !important;
+  }
+  .carousel-item[style*="translateX(-100%)"] {
+    transform: translateX(-60%) scale(0.7) !important;
   }
   .home-text, .video-card {
     max-width: 100%;
+  }
+  .radio-controls {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 240px;
+  }
+  .carousel-item {
+    width: 160px;
+    height: 220px;
+  }
+  .carousel-item[style*="translateX(60%)"] {
+    transform: translateX(30%) scale(0.9) !important;
+  }
+  .carousel-item[style*="translateX(-60%)"] {
+    transform: translateX(-30%) scale(0.9) !important;
+  }
+  .carousel-item[style*="translateX(100%)"] {
+    transform: translateX(40%) scale(0.7) !important;
+  }
+  .carousel-item[style*="translateX(-100%)"] {
+    transform: translateX(-40%) scale(0.7) !important;
+  }
+  .carousel-caption {
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .radio-controls {
+    gap: 0.75rem;
+  }
+  .radio-custom {
+    width: 14px;
+    height: 14px;
   }
 }

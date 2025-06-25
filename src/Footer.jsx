@@ -44,13 +44,25 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="/home">Home</a>
+              <a href="/">Home</a>
             </li>
-        <li>
+            <li>
               <a href="/team">Our Team</a>
             </li>
             <li>
-              <a href="/contact">Contact Us</a>
+              <a href="https://www.youtube.com/@RadioNitroz">Youtube</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/radionitroz.nitdgp/">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/radionitroz.nitdgp/">Facebook</a>
+            </li>
+            <li>
+              <a href="#">Whatsapp</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/radio-nitroz-nitdgp/">Linkedin</a>
             </li>
           </ul>
         </div>
@@ -62,9 +74,6 @@ const Footer = () => {
             <li>
               <FaMapMarkerAlt /> National Institute of Technology,<br />
               MG Avenue, Durgapur, West Bengal, India
-            </li>
-            <li>
-              <FaPhone /> +1 (123) 456-7890
             </li>
             <li>
               <FaEnvelope /> radionitroz.nitdgp@gmail.com
@@ -81,9 +90,9 @@ const Footer = () => {
           <div className="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.59396371979!2d87.29027327537335!3d23.54710202880964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f772081cede5e9%3A0x33fb9ccb243dfa5!2sNational%20Institute%20of%20Technology%2C%20Durgapur!5e0!3m2!1sen!2sin!4v1747386826374!5m2!1sen!2sin"
-              
+
               loading="lazy"
-           
+
             ></iframe>
           </div>
         </div>
@@ -95,7 +104,7 @@ const Footer = () => {
           Made with ❤️ by Web Dev Team <br />
           &copy; {new Date().getFullYear()} Radio NITroz. All Rights Are Reserved.
         </p>
-        
+
       </div>
     </footer>
   );

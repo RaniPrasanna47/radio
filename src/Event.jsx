@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import "./Event.css";
 import bgVideo from "./events/videoplayback (1).mp4";
 import glamitUp from "./events/rampwalk.jpeg";
@@ -50,69 +50,140 @@ const videoSeriesCards = [
 ];
 
 const Carousel = ({ title, items }) => {
-  const containerRef = useRef(null);
-  let angle = 0;
-  let dragging = false;
-  let lastX = 0;
+  const [activeIndex, setActiveIndex] = useState(0);
+  const carouselRef = useRef(null);
+  const isDraggingRef = useRef(false);
+  const startXRef = useRef(0);
+  const rotationIntervalRef = useRef(null);
+
+  const handleRadioChange = (index) => {
+    setActiveIndex(index);
+    resetAutoRotation();
+  };
+
+  const resetAutoRotation = () => {
+    if (rotationIntervalRef.current) {
+      clearInterval(rotationIntervalRef.current);
+    }
+    rotationIntervalRef.current = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % items.length);
+    }, 3000);
+  };
+
+  const handleMouseDown = (e) => {
+    isDraggingRef.current = true;
+    startXRef.current = e.clientX;
+    if (rotationIntervalRef.current) {
+      clearInterval(rotationIntervalRef.current);
+    }
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDraggingRef.current) return;
+    const deltaX = e.clientX - startXRef.current;
+    if (Math.abs(deltaX) > 50) {
+      const direction = deltaX > 0 ? -1 : 1;
+      setActiveIndex((prev) => (prev + direction + items.length) % items.length);
+      startXRef.current = e.clientX;
+    }
+  };
+
+  const handleMouseUp = () => {
+    isDraggingRef.current = false;
+    resetAutoRotation();
+  };
 
   useEffect(() => {
-    const container = containerRef.current;
-    const carousel = container.querySelector(".carousel");
-    const autoSpin = setInterval(() => {
-      angle += 0.3;
-      carousel.style.transform = `translateZ(-400px) rotateY(${angle}deg)`;
-    }, 30);
-
-    const handleMouseDown = (e) => {
-      dragging = true;
-      lastX = e.clientX;
-      clearInterval(autoSpin);
-    };
-    const handleMouseMove = (e) => {
-      if (!dragging) return;
-      const dx = e.clientX - lastX;
-      lastX = e.clientX;
-      angle += dx * 0.4;
-      carousel.style.transform = `translateZ(-400px) rotateY(${angle}deg)`;
-    };
-    const handleMouseUp = () => {
-      dragging = false;
-    };
-
-    container.addEventListener("mousedown", handleMouseDown);
-    container.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mouseup", handleMouseUp);
-
+    resetAutoRotation();
     return () => {
-      clearInterval(autoSpin);
-      container.removeEventListener("mousedown", handleMouseDown);
-      container.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseup", handleMouseUp);
+      if (rotationIntervalRef.current) {
+        clearInterval(rotationIntervalRef.current);
+      }
     };
-  }, [items]);
+  }, [items.length]);
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (carousel) {
+      carousel.addEventListener('mousedown', handleMouseDown);
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', handleMouseUp);
+    }
+    return () => {
+      if (carousel) {
+        carousel.removeEventListener('mousedown', handleMouseDown);
+      }
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, []);
 
   return (
     <div className="carousel-section">
-      <h2 className="section-title">{title}</h2>
-      <div className="carousel-container" ref={containerRef}>
-        <div className="carousel">
-          {items.map((item, idx) => (
-            <div
-              key={item.id}
-              className="carousel-item"
-              style={{
-                transform: `rotateY(${(360 / items.length) * idx}deg) translateZ(400px)`,
-              }}
-            >
-              <img src={item.image} alt={item.title} />
-              <div className="carousel-caption">{item.title}</div>
-              <div className="reflection">
-                <img src={item.image} alt="" />
-              </div>
-            </div>
+      <div className="section-header">
+        <h2 className="section-title">{title}</h2>
+        <div className="radio-controls">
+          {items.map((_, index) => (
+            <label key={index} className="radio-label">
+              <input
+                type="radio"
+                name={`carousel-${title}`}
+                checked={activeIndex === index}
+                onChange={() => handleRadioChange(index)}
+              />
+              <span className="radio-custom"></span>
+            </label>
           ))}
         </div>
-        <div className="ground" />
+      </div>
+      <div className="carousel-container">
+        <div 
+          className="carousel-wheel" 
+          ref={carouselRef}
+        >
+          {items.map((item, index) => {
+            const offset = (index - activeIndex + items.length) % items.length;
+            let transform = '';
+            let zIndex = 0;
+            let opacity = 1;
+            
+            if (offset === 0) {
+              transform = 'translateX(0) scale(1)';
+              zIndex = 5;
+            } else if (offset === 1 || offset === items.length - 1) {
+              const direction = offset === 1 ? 1 : -1;
+              transform = `translateX(${direction * 80}%) scale(0.9)`;
+              zIndex = 4;
+              opacity = 0.8;
+            } else if (offset === 2 || offset === items.length - 2) {
+              const direction = offset === 2 ? 1 : -1;
+              transform = `translateX(${direction * 130}%) scale(0.7)`;
+              zIndex = 3;
+              opacity = 0.6;
+            } else {
+              transform = 'translateX(0) scale(0)';
+              zIndex = 0;
+              opacity = 0;
+            }
+
+            return (
+              <div
+                key={item.id}
+                className={`carousel-item ${offset === 0 ? 'active' : ''}`}
+                style={{ 
+                  transform,
+                  zIndex,
+                  opacity,
+                  transition: 'all 0.5s ease-out'
+                }}
+                onClick={() => handleRadioChange(index)}
+              >
+                <img src={item.image} alt={item.title} />
+                <div className="carousel-caption">{item.title}</div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
