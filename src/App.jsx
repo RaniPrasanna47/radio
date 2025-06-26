@@ -10,6 +10,7 @@ import Alumni from './Alumni';
 import Preloader from './Preloader';
 import Footer from './Footer';
 import Team from './Team';
+import TestimonialSection from './TestimonialSection';
 
 
 function AppContent() {
@@ -86,6 +87,7 @@ function AppContent() {
                   <div ref={homeRef}>
                     <Home />
                     <Event />
+                    <TestimonialSection/>
                   </div>
                 </>
               } />
