@@ -339,3 +339,35 @@
   .tab-button { padding: 0.8rem 1.2rem; font-size: 0.9rem; }
   .card { height: 340px; }
 }
+
+
+/* Add these styles to your CSS file */
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  padding: 0.8rem;
+  background: rgba(108, 99, 255, 0.1);
+  border-radius: 8px;
+  width: 100%; /* Ensure it takes full width */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+.contact-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Show ellipsis when text overflows */
+  display: block; /* Ensure it takes full width */
+  max-width: 100%; /* Don't exceed container width */
+}
+
+/* For the card back to ensure proper spacing */
+.card-back {
+  padding: 1.2rem; /* Slightly reduce padding if needed */
+  justify-content: space-between;
+  overflow: hidden; /* Prevent any overflow */
+}

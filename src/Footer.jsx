@@ -59,7 +59,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/radionitroz.nitdgp/">Facebook</a>
             </li>
             <li>
-              <a href="#">Whatsapp</a>
+              <a href="https://whatsapp.com/channel/0029VbAmYiuInlqNIZAWBk39">Whatsapp</a>
             </li>
             <li>
               <a href="https://www.linkedin.com/company/radio-nitroz-nitdgp/">Linkedin</a>
