@@ -86,94 +86,166 @@ const members = {
   ],
   fourthYear: [
     {
-      name: "Jayant Mandal",
-      photo: jayantmandal,
-      post: "Senior Coordinator",
+      name: "D Sai Sahil",
+      photo: sahil,
+      post: "President",
       instagram: "#",
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
-      email: "jayant@example.com",
+      email: "sahil@example.com",
     },
     {
-      name: "Kirthika S",
-      photo: kirthika,
-      post: "Senior Coordinator",
+      name: "Sk Raj Ali",
+      photo: raj,
+      post: "Vice President",
       instagram: "#",
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
-      email: "kirthika@example.com",
+      email: "raj@example.com",
     },
     {
       name: "Mohammed Asif",
       photo: asif,
-      post: "Senior Coordinator",
+      post: "General Secretary",
       instagram: "#",
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
       email: "asif@example.com",
     },
     {
+      name: "Jayant Mandal",
+      photo: jayantmandal,
+      post: "Joint Secretary",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "jayant@example.com",
+    },
+    {
       name: "Ramya Akalankam",
       photo: ramya,
-      post: "Senior Coordinator",
+      post: "Convenor",
       instagram: "#",
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
       email: "ramya@example.com",
     },
     {
-      name: "Kartikeya",
-      photo: kartikeya,
-      post: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "kartikeya@example.com",
-    },
-    {
-      name: "Pranesh Rao K",
-      photo: pranesh,
-      post: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "pranesh@example.com",
-    },
-    {
       name: "Rupali Kumari",
       photo: rupali,
-      post: "Senior Coordinator",
+      post: "Co Convenor",
       instagram: "#",
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
       email: "rupali@example.com",
     },
     {
-      name: "Arnab Banerjee",
-      photo: arnab,
-      post: "Senior Coordinator",
+      name: "Kartikeya",
+      photo: kartikeya,
+      post: "Editor-In-Chief",
       instagram: "#",
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
-      email: "arnab@example.com",
+      email: "kartikeya@example.com",
+    },
+    {
+      name: "Anshul Kumar",
+      photo: anshul,
+      post: "Treasurer",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "anshul@example.com",
+    },
+    {
+      name: "Md Toufeeque khan",
+      photo: touf,
+      post: "Tech Head",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "toufeeque@example.com",
+    },
+    {
+      name: "Kirthika S",
+      photo: kirthika,
+      post: "Event Head",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "kirthika@example.com",
+    },
+    {
+      name: "Deepsika Bishoye",
+      photo: deepsika,
+      post: "Publicity Head",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "deepsika@example.com",
     },
     {
       name: "Anshika Goswami",
       photo: anshika,
-      post: "Senior Coordinator",
+      post: "Fest Head",
       instagram: "#",
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
       email: "anshika@example.com",
     },
     {
-      name: "D Sai Sahil",
-      photo: sahil,
-      post: "Senior Coordinator",
+      name: "Arnab Banerjee",
+      photo: arnab,
+      post: "Sponsorship Head",
       instagram: "#",
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
-      email: "sahil@example.com",
+      email: "arnab@example.com",
+    },
+    {
+      name: "Sanjib Maity",
+      photo: sanjib,
+      post: "Logistics Head",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "sanjib@example.com",
+    },
+    {
+      name: "Pranesh Rao K",
+      photo: pranesh,
+      post: "Operations Head",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "pranesh@example.com",
+    },
+    {
+      name: "MMSS Manikanta",
+      photo: mmss,
+      post: "PR & Outreach Head",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "manikanta@example.com",
+    },
+    {
+      name: "Kumar Shankar",
+      photo: shankar,
+      post: "ATH Head",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "shankar@example.com",
+    },
+    {
+      name: "Sivala Rishita",
+      photo: rishita,
+      post: "WebD Head",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "rishita@example.com",
     },
     {
       name: "Sarmistha Naskar",
@@ -183,78 +255,6 @@ const members = {
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
       email: "sarmistha@example.com",
-    },
-    {
-      name: "Sk Raj Ali",
-      photo: raj,
-      post: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "raj@example.com",
-    },
-    {
-      name: "Anshul Kumar",
-      photo: anshul,
-      post: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "anshul@example.com",
-    },
-    {
-      name: "MMSS Manikanta",
-      photo: mmss,
-      post: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "manikanta@example.com",
-    },
-    {
-      name: "Kumar Shankar",
-      photo: shankar,
-      post: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "shankar@example.com",
-    },
-    {
-      name: "Md Toufeeque khan",
-      photo: touf,
-      post: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "toufeeque@example.com",
-    },
-    {
-      name: "Sivala Rishita",
-      photo: rishita,
-      post: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "rishita@example.com",
-    },
-    {
-      name: "Deepsika Bishoye",
-      photo: deepsika,
-      post: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "deepsika@example.com",
-    },
-    {
-      name: "Sanjib Maity",
-      photo: sanjib,
-      post: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "sanjib@example.com",
     },
     {
       name: "Harshada Pawar",
@@ -268,13 +268,40 @@ const members = {
   ],
   thirdYear: [
     {
-      name: "Debasmita Saha",
-      photo: debasmitaSaha,
-      domain: "Senior Coordinator",
+      name: "Rishab Soni",
+      photo: soni,
+      domain: "Creative Head",
       instagram: "#",
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
+      email: "rishab@example.com",
+    },
+    {
+      name: "Sayantan Banerjee",
+      photo: sayantan,
+      domain: "Deputy Treasurer",
+      instagram: "https://www.instagram.com/sayantanb_007?igsh=cnp3eHZxbWIzanIx",
+      linkedin: "https://www.linkedin.com/in/sayantan-banerjee-193b0124a",
+      phone: "+91XXXXXXXXXX",
+      email: "sayantan@example.com",
+    },
+    {
+      name: "Debasmita Saha",
+      photo: debasmitaSaha,
+      domain: "Content Head",
+      instagram: "https://www.instagram.com/twinkling._star.?igsh=Zzdua2J4Z2Q0cmZt",
+      linkedin: "https://www.linkedin.com/in/debasmita-saha-005405308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      phone: "+91XXXXXXXXXX",
       email: "debasmita@example.com",
+    },
+    {
+      name: "Basudev Pal",
+      photo: bashu,
+      domain: "Media Head",
+      instagram: "#",
+      linkedin: "#",
+      phone: "+91XXXXXXXXXX",
+      email: "basudev@example.com",
     },
     {
       name: "Anurag Ray",
@@ -290,7 +317,7 @@ const members = {
       photo: anth,
       domain: "Senior Coordinator",
       instagram: "#",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/antharya-j-98a140309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       phone: "+91XXXXXXXXXX",
       email: "antharya@example.com",
     },
@@ -307,8 +334,8 @@ const members = {
       name: "MMK Lechler",
       photo: mmk,
       domain: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
+      instagram: "https://www.instagram.com/flora_lechler?igsh=MXVpZDU3cDl1enFuMQ==",
+      linkedin: "https://www.linkedin.com/in/mozes-mani-kumari-919728339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       phone: "+91XXXXXXXXXX",
       email: "mmk@example.com",
     },
@@ -320,15 +347,6 @@ const members = {
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
       email: "animesh@example.com",
-    },
-    {
-      name: "Sayantan Banerjee",
-      photo: sayantan,
-      domain: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "sayantan@example.com",
     },
     {
       name: "Suraj Kumar",
@@ -356,15 +374,6 @@ const members = {
       linkedin: "#",
       phone: "+91XXXXXXXXXX",
       email: "sashwata@example.com",
-    },
-    {
-      name: "Basudev Pal",
-      photo: bashu,
-      domain: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "basudev@example.com",
     },
     {
       name: "Vishu J",
@@ -412,15 +421,6 @@ const members = {
       email: "gopeshwar@example.com",
     },
     {
-      name: "Rishab Soni",
-      photo: soni,
-      domain: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
-      phone: "+91XXXXXXXXXX",
-      email: "rishab@example.com",
-    },
-    {
       name: "Srirama Sai Bhavana",
       photo: bhav,
       domain: "Senior Coordinator",
@@ -433,8 +433,8 @@ const members = {
       name: "Aditya Shaw",
       photo: aditya,
       domain: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
+      instagram: "https://www.instagram.com/_a_d_i_t_y_a__s_h_a_w_/?hl=en",
+      linkedin: "https://www.linkedin.com/in/aditya-shaw-b5a3a430a/",
       phone: "+91XXXXXXXXXX",
       email: "bhavana@example.com",
     },
@@ -451,8 +451,8 @@ const members = {
       name: "Shrutisadhan Mudly",
       photo: shruti,
       domain: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
+      instagram: "https://www.instagram.com/mudly_ss/",
+      linkedin: "https://www.linkedin.com/in/shrutisadhan-mudly-ab4b342a4/",
       phone: "+91XXXXXXXXXX",
       email: "bhavana@example.com",
     },
@@ -460,8 +460,8 @@ const members = {
       name: "Soumyadeep Dey",
       photo: soumyadeep,
       domain: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
+      instagram: "https://www.instagram.com/off_soumyadeep.dey/",
+      linkedin: "https://www.linkedin.com/in/soumyadeepd1/",
       phone: "+91XXXXXXXXXX",
       email: "bhavana@example.com",
     },
@@ -469,8 +469,8 @@ const members = {
       name: "Srijan Maddheshiya",
       photo: srijan,
       domain: "Senior Coordinator",
-      instagram: "#",
-      linkedin: "#",
+      instagram: "https://www.instagram.com/srijan_maddeshiya/",
+      linkedin: "https://www.linkedin.com/in/srijan-maddheshiya-5b7574298/",
       phone: "+91XXXXXXXXXX",
       email: "bhavana@example.com",
     },
@@ -650,54 +650,46 @@ const members = {
 };
 
 const MemberCard = ({ name, photo, post, domain, instagram, linkedin, phone, email }) => {
-  const [isFlipped, setIsFlipped] = React.useState(false);
   const location = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
   return (
-    <div
-      className={`card ${isFlipped ? 'flipped' : ''}`}
-      onClick={() => setIsFlipped(!isFlipped)}
-    >
-      <div className="card-inner">
-        {/* Front Side */}
-        <div className="card-front">
+    <div className="card">
+      <div className="card-inner">       
+        <div className="card-blur-area">
           <div className="avatar-wrapper">
             <img className="avatar" src={photo} alt={name} />
             <div className="avatar-glow" />
           </div>
           <h3 className="teammember-name">{name}</h3>
           <p className="member-role">{post || domain}</p>
-
         </div>
-
-        {/* Back Side */}
-        <div className="card-back">
-          <h3 className="teammember-name">{name}</h3>
-          <p className="member-role">{post || domain}</p>
-
+       
+        <div className="hover-overlay" onClick={e => e.stopPropagation()}>
           <div className="contact-info">
-
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />
               <a href={`mailto:${email}`} className="contact-link">{email}</a>
             </div>
-          </div>
-
-          <div className="social-links">
-            <a href={instagram} className="social-icon" onClick={e => e.stopPropagation()}>
-              <FaInstagram className="icon" />
-            </a>
-            <a href={linkedin} className="social-icon" onClick={e => e.stopPropagation()}>
-              <FaLinkedin className="icon" />
-            </a>
+            <div className="social-links">
+              <a href={instagram} className="social-icon" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
+                <FaInstagram className="icon" />
+              </a>
+              <a href={linkedin} className="social-icon" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
+                <FaLinkedin className="icon" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   );
 };
+
 
 export default function TeamPage() {
   const [selectedTab, setSelectedTab] = React.useState("faculty");
